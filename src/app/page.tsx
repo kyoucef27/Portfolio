@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { 
   ArrowRight, 
   Code2, 
@@ -162,8 +163,8 @@ function HomePage() {
 
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <button
-              onClick={scrollToProjects}
+            <Link
+              href="/projects"
               className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center space-x-3"
             >
               <Code2 size={20} />
@@ -172,7 +173,7 @@ function HomePage() {
                 size={20} 
                 className="group-hover:translate-x-1 transition-transform duration-300" 
               />
-            </button>
+            </Link>
 
             <button
               onClick={openChatbot}

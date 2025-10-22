@@ -159,7 +159,7 @@ export default function Chatbot() {
 
   return (
     <div className="fixed bottom-5 right-8 z-[100]">
-      {/* Welcome Notification Bubble */}
+
       {showNotification && !open && (
         <div className="absolute bottom-20 right-0 shadow-2xl rounded-2xl border border-gray-100 p-5 mb-2 w-80 animate-slideUp backdrop-blur-sm bg-white/95">
           <div className="flex items-start space-x-3">
@@ -430,7 +430,6 @@ export default function Chatbot() {
             } before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-400 before:via-purple-400 before:to-pink-400 before:opacity-0 hover:before:opacity-30 before:transition-opacity before:duration-300`}
           >
             <MessageCircle size={24} className="relative z-10" />
-            {/* Floating particles effect */}
             <div className="absolute inset-0 rounded-full overflow-hidden">
               <div className="absolute top-2 left-3 w-1 h-1 bg-white/30 rounded-full animate-ping animation-delay-1000"></div>
               <div className="absolute bottom-3 right-2 w-1 h-1 bg-white/30 rounded-full animate-ping animation-delay-2000"></div>
@@ -438,8 +437,7 @@ export default function Chatbot() {
           </button>
         </div>
       )}
-      
-      {/* Enhanced Custom Styles */}
+
       <style jsx>{`
         @keyframes slideUp {
           0% { 

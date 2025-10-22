@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { useScroll, useMobileMenu } from "@/hooks";
 
 function Navbar() {
@@ -23,23 +24,24 @@ function Navbar() {
         <div className="flex justify-between items-center h-16">
 
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-pink-600 transition-all duration-300">
               YoucefCodes
-            </a>
+            </Link>
           </div>
 
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
+                  prefetch={true}
                   className="relative px-3 py-2 text-gray-700 hover:text-blue-600 transition-colors duration-300 group"
                 >
                   <span className="relative z-10">{item.name}</span>
                   <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -75,14 +77,15 @@ function Navbar() {
       }`}>
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-lg border-b border-gray-200/20">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
+              prefetch={true}
               className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-all duration-200"
               onClick={closeMobileMenu}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -2,6 +2,7 @@
 import "./globals.css";
 import Chatbot from "../components/Chatbot";
 import Navbar from "../components/Navbar";
+import PagePreloader from "../components/PagePreloader";
 
 export const metadata = {
   title: "YoucefCodes | Portfolio",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Chatbot />
+        <PagePreloader />
       </body>
     </html>
   );
