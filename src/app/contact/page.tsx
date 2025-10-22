@@ -2,21 +2,11 @@
 
 import React from 'react';
 import { 
-  Code2, 
-  Database, 
-  Globe, 
-  Server, 
-  Shield, 
-  Terminal,
   Mail,
   Github,
   Linkedin,
   ExternalLink,
-  MapPin,
-  Heart,
-  Cpu,
-  Layers,
-  Settings
+
 } from 'lucide-react';
 
 
