@@ -31,7 +31,7 @@ export default function Chatbot() {
     stopTyping,
     typingUsers
   } = useSocket({
-    serverUrl: 'https://portfolio-backend-daeg.onrender.com:3001',
+    serverUrl: 'https://portfolio-backend-daeg.onrender.com',
     userId,
     autoConnect: false
   });

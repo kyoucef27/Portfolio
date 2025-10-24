@@ -23,7 +23,7 @@ interface SocketState {
 }
 
 export const useSocket = ({ 
-  serverUrl = 'http://localhost:3001', 
+  serverUrl = 'https://portfolio-backend-daeg.onrender.com', 
   userId,
   autoConnect = false 
 }: UseSocketProps = {}) => {
