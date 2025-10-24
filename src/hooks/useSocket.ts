@@ -195,7 +195,7 @@ export const useSocket = ({
 
     try {
 
-      const response = await fetch('http://localhost:3001/api/chatbot/message', {
+      const response = await fetch('https://portfolio-backend-daeg.onrender.com/api/chatbot/message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
